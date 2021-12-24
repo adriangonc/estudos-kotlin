@@ -5,7 +5,7 @@ var contNumerosPrimos = 0
 fun main() {
     var listaNumeros: MutableList<Int> = mutableListOf(0)
 
-    for(i in 1..99999){
+    for(i in 1..9999){
         listaNumeros.add(i)
     }
 
