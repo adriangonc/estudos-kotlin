@@ -5,7 +5,7 @@ var contNumerosPrimos = 0
 fun main() {
     var listaNumeros: MutableList<Int> = mutableListOf(0)
 
-    for(i in 1..9999){
+    for(i in 1..99999){
         listaNumeros.add(i)
     }
 
@@ -22,6 +22,10 @@ fun main() {
 //Número de divisores e somente 2
 fun numeroEPrimo(numero: Int) {
     var numeroDivisores = 0
+
+    if(numero > 2 && numero % 2 ==0){
+        return
+    }
 
     for(i in 1..numero){
         if(numero % i == 0){
